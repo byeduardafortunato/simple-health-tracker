@@ -12,7 +12,7 @@ const bmi = weight / (heightInMeters * heightInMeters);
 
         
         document.getElementById('bmi-value').innerText = bmi.toFixed(2);
-    } else if {
+    } else {
         alert("Please fill in all fields!");
     }
 });
