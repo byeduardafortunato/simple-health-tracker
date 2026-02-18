@@ -7,8 +7,8 @@ const height = parseFloat(document.getElementById('height').value);
 
     if (weight > 0 && height > 0) {
         
-        
-        const bmi = weight * (height + height);
+const heightInMeters = height / 100;
+const bmi = weight / (heightInMeters * heightInMeters);
 
         
         document.getElementById('bmi-value').innerText = bmi.toFixed(2);
